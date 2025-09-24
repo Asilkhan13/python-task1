@@ -1,0 +1,16 @@
+# 1. Списокты кері шығару
+lst = [1, 2, 3, 4, 5]
+print("Кері тізім:", lst[::-1])
+
+# 2. Сортировка абсолют мәні бойынша кему ретімен
+def list_sort(lst):
+    return sorted(lst, key=abs, reverse=True)
+
+print("Сортировка:", list_sort([3, -10, 5, -7, 2]))
+
+# 3. Бірінші және соңғы элементтерді ауыстыру
+def change(lst):
+    lst[0], lst[-1] = lst[-1], lst[0]
+    return lst
+
+print("Ауыстырылған:", change([1, 2, 3, 4]))
